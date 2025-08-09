@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Job Application Tracker</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1>Job Application Tracker</h1>
+    <form id="appForm">
+        <input type="text" id="company" placeholder="Company Name" required>
+        <input type="text" id="position" placeholder="Position" required>
+        <input type="date" id="date" required>
+        <input type="text" id="link" placeholder="Job Link">
+        <textarea id="notes" placeholder="Notes"></textarea>
+        <select id="status">
+            <option>Applied</option>
+            <option>Interview</option>
+            <option>Offer</option>
+            <option>Rejected</option>
+        </select>
+        <button type="submit">Add</button>
+    </form>
+
+    <table id="applicationsTable">
+        <thead>
+            <tr>
+                <th>Company</th>
+                <th>Position</th>
+                <th>Date</th>
+                <th>Status</th>
+                <th>Actions</th>
+            </tr>
+        </thead>
+        <tbody></tbody>
+    </table>
+
+    <script src="script.js"></script>
+</body>
+</html>
